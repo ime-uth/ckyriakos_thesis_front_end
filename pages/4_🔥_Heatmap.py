@@ -5,6 +5,7 @@ st.set_page_config(layout="wide")
 
 markdown = """
 Special Thanks to the Creator of geemap!>
+
 Web App URL: <https://template.streamlitapp.com>
 GitHub Repository: <https://github.com/giswqs/streamlit-multipage-template>
 """
