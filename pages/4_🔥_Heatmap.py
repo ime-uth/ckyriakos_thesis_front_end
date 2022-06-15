@@ -4,7 +4,7 @@ import leafmap.foliumap as leafmap
 st.set_page_config(layout="wide")
 
 markdown = """
-Special Thanks to the Creator of geemap !
+Special Thanks to the Creator of geemap !>
 Web App URL: <https://template.streamlitapp.com>
 GitHub Repository: <https://github.com/giswqs/streamlit-multipage-template>
 """
@@ -20,7 +20,7 @@ with st.expander("See source code"):
     with st.echo():
         #filepath = "https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_cities.csv"
         filepath = "https://raw.githubusercontent.com/ckyriakos/thesis_front_end/master/data/greek_cities.csv" # EDW THA VALW TO CSV POU MAS ENDIAFEREI ONTWS
-        m = leafmap.Map(center=[22.940171,39.371464], zoom=6, tiles="stamentoner")
+        m = leafmap.Map(center=[39.371464,22.940171], zoom=6, tiles="stamentoner")
         m.add_heatmap(
             filepath,
             latitude="lat",
