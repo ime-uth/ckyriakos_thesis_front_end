@@ -3,7 +3,7 @@ import ee
 import streamlit as st
 import geemap.foliumap as geemap
 
-geemap.ee_initialize()
+
 
 st.set_page_config(layout="wide")
 
@@ -27,6 +27,7 @@ st.title("Comparing Global Land Cover Maps")
 
 col1, col2 = st.columns([4, 1])
 
+geemap.ee_initialize()
 Map = geemap.Map()
 Map.add_basemap("ESA WorldCover 2020 S2 FCC")
 Map.add_basemap("ESA WorldCover 2020 S2 TCC")
