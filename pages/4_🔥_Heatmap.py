@@ -19,7 +19,7 @@ with st.expander("See source code"):
     with st.echo():
         #filepath = "https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_cities.csv"
         filepath = "https://github.com/ckyriakos/thesis_front_end/data/greek_cities.csv" # EDW THA VALW TO CSV POU MAS ENDIAFEREI ONTWS
-        m = leafmap.Map(center=[ 22.9507, -39.3666], zoom=4, tiles="greek_cities")
+        m = leafmap.Map(center=[ 22.9507, -39.3666], zoom=4, tiles="stamentoner")
         m.add_heatmap(
             filepath,
             latitude="lat",
