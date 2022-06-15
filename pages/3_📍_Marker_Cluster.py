@@ -29,7 +29,7 @@ with st.expander("See source code"):
             x="lng",
             y="lat",
             color_column='capital',
-            icon_names=['gear', 'map', 'leaf', 'globe'],
+            icon_names=['gear', 'map', 'leaf', ],
             spin=True,
             add_legend=True,
         )
