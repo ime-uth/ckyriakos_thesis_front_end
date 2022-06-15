@@ -3,6 +3,8 @@ import ee
 import streamlit as st
 import geemap.foliumap as geemap
 
+geemap.ee_initialize()
+
 st.set_page_config(layout="wide")
 
 st.sidebar.title("About")
