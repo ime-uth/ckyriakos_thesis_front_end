@@ -42,7 +42,7 @@ def uploaded_file_to_gdf(data):
     import os
     import uuid
 
-     file_extension = os.path.splitext(data.name)
+    file_extension = os.path.splitext(data.name)
     file_id = str(uuid.uuid4())
     file_path = os.path.join(tempfile.gettempdir(), f"{file_id}{file_extension}")
 
