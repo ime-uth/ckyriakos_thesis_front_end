@@ -10,6 +10,10 @@ import geemap.foliumap as geemap
 from datetime import date
 from shapely.geometry import Polygon
 
+
+from cachetools import cached
+
+
 st.set_page_config(layout="wide")
 
 st.sidebar.title("About")
