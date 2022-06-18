@@ -40,7 +40,7 @@ st.sidebar.info(
 
 
 
-@st.cache
+#@st.cache
 def uploaded_file_to_gdf(data):
     import tempfile
     import os
