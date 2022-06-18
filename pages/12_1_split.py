@@ -36,7 +36,7 @@ st.sidebar.info(
 
 
 
-#@st.cache
+@st.cache
 def uploaded_file_to_gdf(data):
     import tempfile
     import os
@@ -177,16 +177,16 @@ def app():
         st.session_state["roi"] = geemap.geopandas_to_ee(gdf, geodesic=False)
         m.add_gdf(gdf, "ROI")
 
-        gdf_2 = uploaded_file_to_gdf(data)
+#         gdf_2 = uploaded_file_to_gdf(data)
 
-        gdf_geom = geemap.geopandas_to_ee(gdf_2)
+#         gdf_geom = geemap.geopandas_to_ee(gdf_2)
         
-        #st.session_state["roi split"]=  
-        split =geemap.fishnet(gdf_geom, rows=10, cols=10, delta=1)
-        st.session_state["roi split"]=  split
-        #m.add_gdf(split, "ROI  split")
-        m.addLayer(split, {}, 'ROI Fishnet')
-        m.to_streamlit(height=600)
+#         #st.session_state["roi split"]=  
+#         split =geemap.fishnet(gdf_geom, rows=10, cols=10, delta=1)
+#         st.session_state["roi split"]=  split
+#         #m.add_gdf(split, "ROI  split")
+#         m.addLayer(split, {}, 'ROI Fishnet')
+#         m.to_streamlit(height=600)
 
         #m.to_streamlit(height=600)
 
