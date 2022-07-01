@@ -171,7 +171,7 @@ def create_final_pandas(ts_pandas):
             # model = joblib.load('simple_classification.pkl')
             # prediction = model.predict(ts_pandas_s2.drop('pivot',axis=1))
             #random   forest  chicago classifier
-            avg_embi_04_clf = "https://raw.githubusercontent.com/ckyriakos/Thesis--BI-through-ML-from-Satellite-Data/ocsvm_avg_rad_embi_04.pkl"
+            avg_embi_04_clf = "https://raw.githubusercontent.com/ckyriakos/thesis_front_end/blob/master/ocsvm_avg_rad_embi_04.pkl"
             model = joblib.load('avg_embi_04_clf')
             prediction = model.predict(ts_pandas_s2.drop('pivot',axis=1))
             st.write(prediction[0]) #  debugging
