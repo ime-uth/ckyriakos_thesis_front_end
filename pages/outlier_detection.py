@@ -171,7 +171,7 @@ def create_final_pandas(ts_pandas):
             # model = joblib.load('simple_classification.pkl')
             # prediction = model.predict(ts_pandas_s2.drop('pivot',axis=1))
             #random   forest  chicago classifier
-            
+            avg_embi_04_clf = "https://raw.githubusercontent.com/ckyriakos/Thesis--BI-through-ML-from-Satellite-Data/ocsvm_avg_rad_embi_04.pkl"
             model = joblib.load(avg_embi_04_clf)
             prediction = model.predict(ts_pandas_s2.drop('pivot',axis=1))
             st.write(prediction[0]) #  debugging
@@ -515,7 +515,7 @@ col1, col2, col3= st.columns(3)
 
 grid_col = col1.number_input("Enter your grid columns",min_value=0,step=1)
 grid_row = col1.number_input("Enter your grid rows",min_value=0,step=1)
-avg_embi_04_clf = "https://raw.githubusercontent.com/ckyriakos/Thesis--BI-through-ML-from-Satellite-Data/ocsvm_avg_rad_embi_04.pkl"
+
 if st.button('Say hello'):
         st.write('Gridding and Finding Abandoned Buildings, pleas wait...')
         if(grid_col==0 and grid_row==0 ):
