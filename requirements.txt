@@ -6,4 +6,6 @@ leafmap
 nbserverproxy
 owslib
 streamlit
-
+joblib
+wxee
+eemont

@@ -243,7 +243,7 @@ def app():
     row1_col1, row1_col2 = st.columns([2, 1])
 
     if st.session_state.get("zoom_level") is None:
-        st.session_state["zoom_level"] = 4
+        st.session_state["zoom_level"] = 6
 
     st.session_state["ee_asset_id"] = None
     st.session_state["bands"] = None
