@@ -9,3 +9,4 @@ streamlit
 joblib
 wxee
 eemont
+sklearn
