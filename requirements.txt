@@ -10,3 +10,4 @@ joblib
 wxee
 eemont
 sklearn
+seaborn
