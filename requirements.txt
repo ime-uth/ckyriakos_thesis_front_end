@@ -13,3 +13,4 @@ sklearn
 seaborn
 datetime
 scikit-learn
+scikit-plot
