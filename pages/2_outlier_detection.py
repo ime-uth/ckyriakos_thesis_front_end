@@ -11,7 +11,8 @@ import geopandas as gpd
 import ee
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import balanced_accuracy_score,accuracy_score,roc_curve,plot_roc_curve
+from sklearn.metrics import balanced_accuracy_score,accuracy_score,roc_curve
+from scikitplot.metrics import plot_roc_curve
 from sys import modules
 
 import os
