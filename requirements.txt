@@ -12,3 +12,4 @@ eemont
 sklearn
 seaborn
 datetime
+scikit-learn
