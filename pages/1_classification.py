@@ -29,6 +29,7 @@ from shapely.geometry import Polygon
 
 st.set_page_config(layout="wide")
 # -----------------------------------------------------------
+ee.Authenticate()
 ee.Initialize()
 
 
